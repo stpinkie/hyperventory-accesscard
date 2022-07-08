@@ -2,10 +2,15 @@
 <resources>
     <string-array name="networks">
         <item>Ethereum Mainnet</item>
-        <item>xDAI Network</item>
-        <item>Ropsten PoW Testnet</item>
-        <item>Rinkeby PoA Testnet</item>
-        <item>Görli PoA Testnet</item>
-        <item>Kovan PoA Testnet</item>
+        <item>Gnosis Chain</item>
+        <item>Polygon MATIC</item>
+        <item>BNB Chain</item>
+        <item>Ropsten Testnet</item>
+        <item>Rinkeby Testnet</item>
+        <item>Görli Testnet</item>
+        <item>Kovan Testnet</item>
+        <item>Kiln Testnet</item>
+        <item>Mumbai Testnet</item>
+        <item>Chapel Testnet</item>
     </string-array>
 </resources>

@@ -17,7 +17,13 @@ class SettingsManager(context: Context) {
     val rpcEndpoint : String
         get() {
             val chainID = sharedPreferences.getLong(SETTINGS_CHAIN_ID, DEFAULT_CHAIN_ID)
-            return if (chainID == CHAIN_ID_XDAI) XDAI_ENDPOINT else String.format(RPC_ENDPOINT_TEMPLATE, CHAIN_ID_TO_SHORTNAME.getValue(chainID))
+            return if (chainID == CHAIN_ID_XDAI) XDAI_ENDPOINT
+            return if (chainID == CHAIN_ID_POLYGON) POLYGON_ENDPOINT
+            return if (chainID == CHAIN_ID_BNB) BNB_ENDPOINT
+            return if (chainID == CHAIN_ID_KILN) KILN_ENDPOINT
+            return if (chainID == CHAIN_ID_MUMBAI) MUMBAI_ENDPOINT
+            return if (chainID == CHAIN_ID_CHAPEL) CHAPEL_ENDPOINT
+            else String.format(RPC_ENDPOINT_TEMPLATE, CHAIN_ID_TO_SHORTNAME.getValue(chainID))
         }
 
     var chainID
